@@ -1,0 +1,17 @@
+name: 'Random Slack Emoji'
+description: 'Sending messages to slack from github actions'
+inputs:
+  token:
+    description: 'Slack api token'
+    required: true
+    default: ''
+  list:
+    description: 'List of emojis to return (custom/all)'
+    required: true
+    default: 'all'
+outputs:
+  emoji:
+    description: 'returns a random emoji'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
