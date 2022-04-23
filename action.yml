@@ -7,7 +7,6 @@ inputs:
     default: ''
   list:
     description: 'List of emojis to return (custom/all)'
-    required: true
     default: 'all'
 outputs:
   emoji:
