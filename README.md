@@ -23,7 +23,7 @@ a reutrns a random emoji
 ```
 - name: Get Random Emoji
   id: reaction
-  uses: beachyapp/slack-emoji-action@v0.1
+  uses: beachyapp/slack-emoji-action@v0.2
   with:
     list: 'custom'
 - name: output
