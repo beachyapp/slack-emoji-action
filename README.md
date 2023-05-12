@@ -30,3 +30,12 @@ a reutrns a random emoji
   run: |
     echo "Random emoji: ${{ steps.reaction.outputs.emoji }}"
 ```
+
+
+## Developing
+
+- use node 16.x - e.g. `nvm use 16`
+- `npm ci` or `npm install` if you're updating packages
+- use `ncc` to build the distribution after updating packages or modifying code
+  - `npm i -g @vercel/ncc`
+  - `ncc build index.js --license licenses.txt`
